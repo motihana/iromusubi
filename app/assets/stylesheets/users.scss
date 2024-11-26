@@ -1,0 +1,175 @@
+/* sign-up-formのスタイル */
+.Signup1 {
+text-align: center;
+margin-top: 20px;
+}
+
+.sign-up-form {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto; /* 中央に配置 */
+}
+
+.sign-up-form label {
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.sign-up-form .field {
+  margin-bottom: 20px;
+}
+
+.sign-up-form input[type="text"],
+.sign-up-form input[type="email"],
+.sign-up-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.sign-up-form input[type="text"]:focus,
+.sign-up-form input[type="email"]:focus,
+.sign-up-form input[type="password"]:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.sign-up-form .error_messages {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.sign-up-form input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sign-up-form input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+.sign-up-form em {
+  font-size: 12px;
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.sign-up-form .actions {
+  text-align: center;
+}
+
+.sign-up-form .actions a {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  margin-top: 10px;
+}
+
+.sign-up-form .actions a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+/* log-in-formのスタイル */
+.log-in-form {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto; /* 中央に配置 */
+}
+
+.log-in-form label {
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.log-in-form .field {
+  margin-bottom: 20px;
+}
+
+.log-in-form input[type="email"],
+.log-in-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.log-in-form input[type="email"]:focus,
+.log-in-form input[type="password"]:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.log-in-form input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.log-in-form input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+.log-in-form .actions {
+  text-align: center;
+}
+
+.log-in-form .actions a {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  margin-top: 10px;
+}
+
+.log-in-form .actions a:hover {
+  text-decoration: underline;
+}
+
+.log-in-form .field input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.log-in-form .field label {
+  display: inline-block;
+  font-size: 14px;
+  color: #555;
+}

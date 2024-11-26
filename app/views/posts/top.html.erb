@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>はんなりフォント適用ページ</title>
+  <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> <!-- 外部CSSの読み込み -->
+</head>
+<body>
+    <div class="top">
+      <div class="oyataitol">
+        <div class="taitol">
+          いろで
+          <br>むすぶ。
+        </div>
+        <div class="taitolname">
+          彩結び_iromusubi
+        </div>
+      </div>
+
+      <div class="oyaoya1">
+        <%= image_tag 'orimono_karaful.jpg', class:'a.image', size: "100%x500" %>
+      </div>
+
+      <div class="oya2"> 
+        <div class="a">
+          日本の伝統色と襲の色目の美しさを探る
+        </div>  
+        <div class="b">
+          四季折々の自然を映し出す日本の伝統色、<br>平安時代から受け継がれてきた美しい「襲の色目（かさねのいろめ）」の世界を紹介しています。
+        </div>
+      </div>
+
+      <div class="oya3"> 
+        <div class="c">
+          <%= link_to 'ログイン',  new_user_session_path, class: 'new-registration-link1' %>
+        </div>
+        <div class="d">
+          <%= link_to '新規登録',   new_user_registration_path, class: 'new-registration-link1' %>
+        </div>
+      </div>
+
+      <div class="e">
+        <h2>Contents</h2>
+        <h2 class="ee">Overview</h2>
+      </div>
+
+      <div class="body">
+        <div class="f">
+          <%= image_tag 'akamomiji.jpg', class:'aka_image', size: "600x300" %>
+          <div class="ghi1">
+            日本の伝統色・襲の色目の解説:
+            <div class="g">
+              ようこそ、色彩の世界へ！
+            </div>
+            <div class="h">
+              ここでは、日本の四季折々の自然が織りなす「伝統色」と、平安時代の宮廷文化から生まれた「襲の色目」の配色美を紐解きます。<br>雅やかな季節の変化を色で感じ、そして色を重ねることで表現される繊細な美の秘密を探っていきましょう。<br>古代から現代へと続く色彩の旅路に心を踊らせてください
+            </div>
+            <div class="i">
+              <%= link_to '→',  one_path, class: 'new-registration-link'  %>
+            </div>
+          </div>
+        </div>
+
+        <!-- 以下のセクションも同様に続く -->
+        <div class="f">
+          <%= image_tag 'kiiroyamabuki.jpg', class:'aka_image' ,size: "600x300" %>
+          <div class="ghi2">
+            診断ページ
+            <div class="g">
+              色彩で個性を輝かせよう！
+            </div>
+            <div class="h">
+              あなたの個性を色彩の魔法で引き出し、毎日をもっと彩り豊かにしませんか？<br>この診断では、あなたが目指す雰囲気やその日の気分にぴったり合う色を提案します。<br>四季を彩る美しい自然の色や、色がもたらす心理的効果を活かして、<br>あなたに最適な配色スタイルを見つけ出します。<br>新たな色彩で、あなたの毎日に特別な輝きをプラスしてみてください！
+            </div>
+            <div class="i">
+              <%= link_to '→',  sindans_new_path, class: 'new-registration-link' %>
+            </div>
+          </div>
+        </div>
+        
+        <div class="f">
+          <%= image_tag 'sakura.png', class:'aka_image' ,size: "600x300" %>
+          <div class="ghi3">
+            マイページ：
+            <div class="g">
+              あなたの色彩ストーリーをここに！
+            </div>
+            <div class="h">
+              ここは、あなただけの色の物語が広がる特別な空間です。<br>診断で見つけた「似合う色」や「なりたい雰囲気の配色」を集めて、あなただけの色彩パレットを作りましょう。<br>ファッションやインテリア、小物のコーディネートを簡単に確認でき、あなたの個性と感性が映し出された、唯一無二の色彩美学がここで築き上げられます。<br>色と共に、あなたの世界を豊かに彩っていく楽しさを存分に味わってください！
+            </div>
+            <div class="i">
+              <% if user_signed_in? %>
+                <%= link_to "→", user_path(current_user.id) , class: 'new-registration-link'%>
+              <% end %>
+            </div>
+          </div>
+        </div>
+        <div class="f">
+        <%= image_tag 'tukikusaao.jpg', class:'aka_image' ,size: "600x300" %>
+          <div class="ghi4">
+            投稿ページ：
+            <div class="g">
+              色彩の世界をシェアしよう！
+            </div>
+            <div class="h">
+              あなたが紡ぎ出す色彩のセンスを、世界と共有してみませんか？<br>このページでは、あなた自身が作り上げた色のコーディネートを投稿し、他のユーザーと感性を分かち合うことができます。<br>季節の移ろいに合わせた配色や、心理効果を考慮した色使いなど、あなたならではの色の物語を発信する場所です。<br>インスピレーションを広げ、色彩を通じて新たなつながりを生み出しましょう！
+            </div>
+            <div class="i">
+              <%= link_to '→',   new_user_registration_path , class: 'new-registration-link' %>
+            </div>
+          </div>
+        </div>
+        <div class="f">
+          <%= image_tag 'midoriha.jpg', class:'aka_image' ,size: "600x300" %>
+          <div class="ghi5">
+            投稿一覧ページ：
+            <div class="g">
+              色彩のインスピレーションを見つけよう！
+            </div>
+            <div class="h">
+              色とりどりの美しさが集まる投稿一覧ページへようこそ。<br>他のユーザーが投稿した色彩アイデアを一望し、新しいインスピレーションを見つけましょう。<br>気に入った配色には「いいね」を押して、色彩への共感をシェアしたり、「コメント」で感想やアイデアを気軽に交換できます。<br>色と色の出会いが、あなたの感性に新しい刺激を与えてくれるはずです。<br>色彩の世界を広げ、共感と創造の場を楽しんでください！
+            </div>
+            <div class="i">
+              <%= link_to '→',   new_user_registration_path , class: 'new-registration-link'%>
+            </div>
+          </div>
+        </div>
+
+      <div class="bb">
+        これらのページを通じて、色彩の豊かさや心理効果を楽しみながら、あなたの日常を彩る素敵な体験を提供します。<br>色の持つ魅力を存分に味わってください。
+      </div>
+    </div>
+</body>
+</html>

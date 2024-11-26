@@ -1,0 +1,137 @@
+/* マイページ専用のスタイル */
+.mypage body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #fdf2f6; /* 淡いピンクの背景 */
+  margin: 0;
+  padding: 20px;
+}
+
+.mypage h1 {
+  text-align: center;
+  color: #c93d62; /* ピンク色 */
+  margin-top: 30px;
+}
+
+.mypage h2 {
+  color: #e5a6c1; /* クリーム色っぽいピンク */
+  border-bottom: 2px solid #f1c6d2; /* 薄いピンクのボーダー */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.mypage .profile11 {
+  color: #ce5777;
+  font-weight: bold;
+}
+
+/* ユーザー情報セクション */
+.mypage .user-info {
+  background-color: #fff5f9; /* 淡いピンク */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.mypage .user-info p {
+  font-size: 16px;
+  color: #6c4f7d; /* 落ち着いたピンク系 */
+}
+
+.mypage .user-info img {
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.mypage .btn-edit {
+  display: inline-block;
+  background-color: #f4b6c2; /* 優しいピンク */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.mypage .btn-edit:hover {
+  background-color: #ec7c9b; /* 少し濃いピンク */
+}
+
+.mypage .profile1 {
+  background-color: #fff7f2; /* 淡いクリーム色 */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+/* ユーザーの投稿一覧 */
+
+.mypage .user-posts .post {
+  background-color: #fdf2f6; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 30vw;
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+
+.mypage .user-posts .post p {
+  color: #6c4f7d; /* 落ち着いたピンク系 */
+}
+
+.mypage .user-posts img {
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* いいねした投稿 */
+.mypage .liked-posts .post {
+  background-color: #fff7f2; /* 淡いクリーム色 */
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  width: 30vw;
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+.mypage .liked-posts .post p {
+  color: #6c4f7d; /* 落ち着いたピンク系 */
+}
+
+.user-liked-posts {
+  display: flex;
+}
+
+.liked-posts1 {
+  margin: 5%;
+}
+
+/* ボタン */
+.mypage .btn-back {
+  display: inline-block;
+  background-color: #ffb9c5; /* 明るいピンク */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.mypage .btn-back:hover {
+  background-color: #f88d9f; /* 少し濃いピンク */
+}

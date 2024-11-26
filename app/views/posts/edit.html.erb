@@ -1,0 +1,17 @@
+<%= form_for @post do |f| %>
+  <%= f.label :name %> <!-- nameフィールドに変更 -->
+  <%= f.text_field :name, size: 140 %>
+
+  <%= f.label :about %> <!-- aboutフィールドを追加 -->
+  <%= f.text_area :about, rows: 5 %>
+
+  <%= f.label :date %> <!-- 日付フィールドを追加 -->
+  <%= f.date_field :date %>
+
+  <div class="field">
+    <%= f.label :画像 %>
+    <%= f.file_field :image %>
+  </div>
+
+  <%= f.submit "編集する" %>
+<% end %>

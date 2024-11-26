@@ -1,0 +1,45 @@
+<div class="mypage">
+  <h1>マイページ</h1>
+  <h2>プロフィール</h2>
+  <div class="profile1">
+    <p><span class="profile11">Name</span> <%= @user.name %></p>
+    <p><span class="profile11">Email Address</span> <%= @user.email %></p>
+    <p><span class="profile11">Profile</span> <%= @user.profile %></p>
+
+    <%= image_tag @user.image_url, size: "250x200" if @user.image? %>
+
+    <% if current_user.id == @user.id %>
+      <%= link_to "編集する", edit_user_registration_path, class: "btn-edit" %>
+    <% end %>
+  </div>
+  <div class="user-liked-posts">
+    <div class="liked-posts1">
+      <h2>ユーザーの投稿一覧</h2>
+      <div class="user-posts">
+        <% @user.posts.each do |t| %>
+          <div class="post">
+            <%= t.name %><br>
+            <%= t.about %><br>
+            <%= t.date %><br>
+            <%= image_tag t.image_url, size: "250x200" if t.image? %><br>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="liked-posts1">
+      <h2>ユーザーがいいねした投稿一覧</h2>
+      <div class="liked-posts">
+        <% @user.liked_posts.each do |t| %>
+          <div class="post">
+            <%= t.name %><br>
+            <%= t.about %><br>
+            <%= t.date %><br>
+            <%= image_tag t.image_url, size: "250x200" if t.image? %><br>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <%= link_to "投稿一覧へ", posts_path, class: "btn-back" %>
+</div>
